@@ -4,3 +4,51 @@
     --black: #0F0F0F;
     --grey: #2B2A2A;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+figure{
+    margin: 0;
+}
+
+#bg{
+    background-image: url(/site-do-meg/assets/img/bg-equipe.jpeg);
+}
+
+#im{
+    width: 50px;
+    border-radius: 50%;
+}
+
+#im:nth-child(3){
+    border: #FDCB1A 2px solid;
+}
+
+#im:nth-child(3)::after{
+    width: 190px;
+    height: 1px;
+    background-color: #FDCB1A;
+    z-index: 9;
+}
+
+#st{
+    width: 16px;
+    height: 9px;
+}
+
+#text{
+    z-index: 0;
+}
+
+/* #text::after{
+    content: url(/site-do-meg/assets/img/itadori.png);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 200px;
+    height: 295px;
+} */
