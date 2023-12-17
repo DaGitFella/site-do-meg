@@ -1,0 +1,64 @@
+/* formatação geral */
+:root {
+  --yellow: #fdcb1a;
+  --white: #ffffff;
+  --black: #0f0f0f;
+  --grey: #2b2a2a;
+}
+
+body {
+  background-color: var(--black);
+  font-family: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* nav */
+.navbar {
+    top: 75px;
+    position: absolute;
+    z-index: 1;
+}
+
+.navbar-nav {
+    gap: 26px;
+}
+
+.navbar-nav .nav-link {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navbar .navbar-brand img {
+    height: 65px;
+}
+
+/* carousel */
+.carousel {
+    position: relative;
+}
+
+.carousel .carousel-inner{
+    height: 100vh;
+}
+
+.carousel .carousel-inner img {
+    opacity: 50%;
+}
+
+.carousel-indicators .selector {
+    height: 5px;
+} 
+
+.carousel-indicators .active {
+    background-color: var(--yellow);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 75vh;
+}

@@ -43,5 +43,111 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- header  -->
+    <header>
+      <nav class="navbar navbar-expand-lg w-100">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/Distopia hoje.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#">Projetos</a>
+              <a class="nav-link" href="#">Equipe</a>
+              <a class="nav-link" href="#">MEG</a>
+              <a class="nav-link" href="#">Fale Conosco</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- carousel -->
+      <div id="projetos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#projetos"
+            data-bs-slide-to="0"
+            class="active selector"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#projetos"
+            data-bs-slide-to="1"
+            class="selector"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#projetos"
+            data-bs-slide-to="2"
+            class="selector"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/ebook.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ebook</h5>
+              <p>
+                Nosso Ebook feito como projeto final do mandala. Projeto em
+                conjunto com as disciplinas geografia e design para o ano letivo
+                de 2022.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/revista.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Revista</h5>
+              <p>
+                Nossa revista feita em conjunto com o curso de comércio como
+                projeto final do ano letivo de 2023.
+              </p>
+            </div>
+            <div class="gradiente"></div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/jornal.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jornal</h5>
+              <p>
+                Nosso jornal feito para estudar e expor de forma dinâmica e
+                lúdica sobre domínios morfos climáticos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#projetos"
+          data-bs-slide="prev"
+        ></button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#projetos"
+          data-bs-slide="next"
+        ></button>
+      </div>
+    </header>
   </body>
 </html>
