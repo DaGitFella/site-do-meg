@@ -1,0 +1,104 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  4-b: $spacer * 2,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 7,
+  9: $spacer * 8.5,
+  10: $spacer * 10,
+  11: $spacer * 11,
+  12: $spacer * 12,
+) !default;
+
+$primary: #FDCB1A;
+$secondary: #BD7904;
+$body-bg-dark: #0F0F0F;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.inika-font {
+    font-family: "Inika", serif;
+}
+
+.apresentacao {
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url("../assets/img/bg-1.jpg"), lightgray 50% / cover no-repeat;
+}
+
+header > img {
+    height: 3rem !important;
+}
+
+.seletores > button {
+    width: 4rem;
+    height: calc(1rem / 3);
+    background: var(--bs-emphasis-color);
+}
+
+.seletores > button#seletor-1 {
+    background: $primary;
+}
+
+.project-description {
+    background: rgba(0, 0, 0, 0.45);
+    width: calc(100% - var(--bs-gutter-x));
+}
+
+.equipe {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url("../assets/img/bg-equipe.jpeg"), lightgray 50% / cover no-repeat;
+    background-position: center center;
+}
+
+.equipe figure {
+    width: 5rem;
+    height: 5rem;
+}
+
+.equipe .arrow {
+    width: 2rem;
+}
+.equipe .designer-description {
+    min-width: 50%;
+}
+
+.equipe .designer-container {
+    margin-top: 14.8rem;
+}
+
+.equipe .designer-description>p::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    background: linear-gradient(0deg, rgba(10,10,10,0.75) 0%, rgba(10,10,10,0.75) 100%), url("../assets/img/itadori.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 50%;
+    height: 180%;
+    max-height: 464px;
+    z-index: -1;
+    content: "";
+}
+
+@include media-breakpoint-between(xs, lg) {
+    .designer-description {
+        width: 75%;
+    }
+}
